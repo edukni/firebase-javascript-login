@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Firebase Javascript Login</title>
+    <!-- stylesheet -->
+    <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,500,700' rel='stylesheet' type='text/css'>
+    <link href="plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- theme stylesheet -->
+    <link href="css/theme.min.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+    <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase.js"></script>
+
+    <script src="js/fbAuth.js"></script>
+
+
+  </head>
+  <body class="fixed-header">
+
+    <div id="preloader">
+      <div id="status">
+          <div class="spinner"></div>
+      </div>
+    </div>
+    <!-- header -->
+    <header id="header">
+      <div class="container">
+        <div class="navbar-backdrop">
+          <div class="navbar">
+            <div class="navbar-left">
+              <a class="navbar-toggle">
+                <i class="fa fa-bars"></i>
+              </a>
+              <a href="index.html" class="logo">
+                Firebase Javascript Login
+              </a>
+              <nav class="nav">
+                              <ul>
+                  <li class="">
+                    <a href="index.html">Home</a>
+                  </li>
+
+                 
+
+              </nav>
+            </div>
+            <div class="nav navbar-right">
+              <ul>
+             <li class="hidden-xs-down">
+                  <a class="userEmail">xxx</a>
+                </li>
+                <li class="hidden-xs-down">
+                  <a id="signOut">Sign Out</a>
+                </li>
+                <li>
+
+
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="navbar-search">
+          <div class="container">
+            <form method="post">
+              <input type="text" class="form-control" placeholder="Search...">
+              <i class="fa fa-times close"></i>
+            </form>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- main -->
+<section class="container">
+  <h1>User Email:</h1>
+
+  <h1 class="userEmail">XXX</h1>
+
+</section>
+
+<body></body>
+
+    <!-- footer -->
+    <footer id="footer">
+
+    </footer>
+    <!-- scripts -->
+    <script src="plugins/jquery/jquery-3.1.0.min.js"></script>
+    <script src="plugins/bootstrap/js/bootstrap.min.js"></script>
+
+    <script src="js/theme.min.js"></script>
+
+<script type="text/javascript">
+       $(window).on('load', function () {
+            $('#status').fadeOut(); // will first fade out the loading animation
+            $('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website.
+        });
+
+  
+</script>
+  </body>
+</html>
